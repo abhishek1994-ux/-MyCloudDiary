@@ -1,0 +1,209 @@
+Introduction to Power Apps
+Power Apps is a suite of apps, services, connectors, and a data platform that provides you with an opportunity to build custom apps for your business needs. By using Power Apps, you can quickly build custom business apps that connect to your business data that is stored either in the underlying data platform (Microsoft Dataverse) or in various online and on-premises data sources (SharePoint, Excel, Office 365, Dynamics 365, SQL Server, and so on).
+Apps that are built by using Power Apps provide rich business logic and workflow capabilities to transform your manual business processes to digital, automated processes. Power Apps simplifies the custom business app building experience by enabling users to build feature-rich apps without writing code.
+Power Apps also provides an extensible platform that lets pro developers programmatically interact with data and metadata, apply business logic, create custom connectors, and integrate with external data.
+With Power Apps, you can:
+Build an app quickly by using the skills that you already have.
+Connect to the cloud services and data sources that you're already using.
+Share your apps instantly so that coworkers can use them on their phones and tablets.
+No alt text provided for this image
+
+When it comes to using Power Apps to get things done and keep people informed, your options are nearly limitless. The following examples can help you think about how to use an app, instead of traditional paper notes, to run your business:
+Equipment in the field - Often, company representatives who visit customers in the field carry clipboards to help guarantee a paper trail of parts with scheduled replacement dates. By running an app on a tablet, reps can look up the customer's equipment, see a picture of a part, test and analyze the part, and then order new parts. Reps can perform these tasks on-site instead of leaving the customer's warehouse.
+Restaurant employee management - Employees of a large restaurant might fill out work schedules and vacation requests on a piece of paper that's affixed to a wall. With Power Apps running on everyone's smartphone, employees can open the app to record the same information, anywhere, anytime. The app can even send reminders for the start of the next day's shift.
+If you're a beginner with Power Apps, this module gets you going quickly; if you're familiar with Power Apps, it ties concepts together and fills in the gaps.
+Power Apps building blocks
+Power Apps is a collection of services, apps, and connectors that work together to let you do much more than just view your data. You can act on your data and update it anywhere and from any device.
+This unit explores each part of the following Power Apps components:
+Power Apps Home Page - Apps start here, whether you build them from data, a sample app, or a blank screen.
+Power Apps Mobile - Run your apps on Microsoft Windows, Apple iOS, and Google Android devices.
+Power Apps Admin Center - Manage Power Apps environments and other components.
+Power Apps Home Page
+If you are building an app, you'll start with the Power Apps Home Page. You can build apps from sample apps, templates, or a blank screen. All the apps that you've built appear here, along with any apps that others have created and shared with you.
+No alt text provided for this image
+Power Apps Studio
+Power Apps Studio is where you can fully develop your apps to make them more effective as a business tool and to make them more attractive. Power Apps Studio has three panes that make creating apps seem more like building a slide deck in Microsoft PowerPoint:
+Left pane - Shows a hierarchical view of all the controls on each screen or a thumbnail for each screen in your app.
+Middle pane - Shows the canvas app that you're working on.
+Right pane - Where you set options such as the layout, properties, and data sources for certain controls.
+No alt text provided for this image
+Power Apps Mobile
+Power Apps Mobile for Windows, iOS, and Android devices allow you to use all the apps that you've created, and those others have shared with you, on your mobile device. You or your users can download the Microsoft Power Apps app from the appropriate app store. When users sign in with their credentials, they will see all apps that have been shared with them. The Power Apps Mobile app only needs to be downloaded once.
+When you use apps in Power Apps Mobile, you get the most out of your device's capabilities: camera controls, GPS location, and more.
+No alt text provided for this image
+Microsoft Power Platform admin center
+Microsoft Power Platform admin center is the centralized place for managing Power Apps for an organization. On this site, you can define and manage different environments to house the apps. For example, you might have separate environments for development and production apps. Additionally, you can define data connections and manage environment roles and data policies.
+For more information, see Best practices Learning Path.
+No alt text provided for this image
+Exercise - Create your first app in Power Apps
+In this unit, you'll generate a mobile app where the data source is a Microsoft Excel workbook that's stored in Microsoft OneDrive for Business. This Excel workbook lists a company's inventory of flooring samples with pictures and prices.
+Keep in mind that you can use data from many other sources, including Microsoft SharePoint, cloud services like Salesforce, and on-premises sources like Microsoft SQL Server.
+Connect to a data source
+To connect to a data source, use the following procedure:
+Download the Flooring Estimates workbook and save it to OneDrive for Business.
+Go to https://make.powerapps.com and sign in with your organizational account.
+On the Home screen, select Create and then, select More data sources on the right.
+Generated apps are always based on a single list or table, but you can add more data to the app later. The next four steps explain how to connect to the Excel workbook.
+In the New tab section, under Connections, select OneDrive for Business and browse to the file location. You might need to select New Connection to see the OneDrive for Business connection.
+Under Choose an Excel file, select the FlooringEstimates.xlsx file.
+Under Choose a table, select the FlooringEstimates table.
+Select Connect on the bottom right.
+Power Apps generates the app by inspecting your data and matching it with Power Apps capabilities so that you get a working app as a starting point.
+Explore the generated app
+Your new three-screen app now opens in Power Apps Studio.
+The following figure shows the main development window for Power Apps Studio, which you'll learn more about in later units.
+No alt text provided for this image
+Select Play  in the upper-right corner to practice using the app. Notice that it includes all the data from the table and provides a good default experience.
+All apps that are generated from data have the same set of screens that you can view from the Screens pane:
+Browse screen - This screen appears by default. In it, you can browse, sort, filter, and refresh the data from the data source. In the browse screen, you can add items to the data source by selecting the plus sign (+).
+Details screen - The details screen shows all information about a single item. In this screen, you can open an item to edit or delete it.
+Edit/create screen - In this screen, you can edit an existing item or create a new one.
+To make your app visible on the phone, it needs to be saved. Select File, Save as. Replace the current title "App" with flooring-estimates app, and then select Save. You will see a green check mark when all changes are successfully saved. You can now open the app on your phone.
+
+Install the app on your device
+To see how the app runs on mobile, install the Power Apps Mobile app on your phone. When building an app, you should test it in the same form factor as your users.
+Download Power Apps Mobile from the app store for the platform that you want to use.
+Sign in by using your username and password.
+On your phone or tablet, run the flooring-estimates app in Power Apps Mobile. If you do not want to install the app, you can run it in a browser.
+If you do not see the flooring-estimates app, then in your Power Apps Mobile app, select the user account menu and toggle on Show non-production apps. You may need to swipe to the left or tap your profile icon to get this option.
+Ways to build Power Apps
+This unit describes how to create an app from a template, a blank canvas, and a data source. This learning path is focused on canvas apps, which give you the flexibility to arrange the user experience and interface the way that you want it. You can get started in many different ways; however, for all of the options, you will use the Power Apps Studio features and functionality to build your app.
+Create an app from a template
+A good way to create an app is to start from a template. Templates use sample data to help you determine what's possible. By opening templates in Power Apps Studio, you can learn, hands-on, how an app is built.
+For example, you can use the Budget Tracker template to create an app that helps you track the budget for projects and events with custom categories, simple data entry, and visuals that highlight expenditures for an effortless inspection.
+No alt text provided for this image
+Create an app from a data source
+Another great way to get started is to generate an app from your own data. Simply point Power Apps at the data source of your choice (for example, a list in Microsoft SharePoint or Microsoft Dataverse), and watch as Power Apps automatically builds a three-screen app. This three-screen app lets you display, edit, delete, and create records.
+No alt text provided for this image
+A special data source is SharePoint. Modern lists in SharePoint and Power Apps have a tight integration. You can either build an app from within a SharePoint site or you can use Power Apps to customize your modern list forms.
+No alt text provided for this image
+The following app was created from a list in Microsoft Lists and lets you browse items in the list, view item details, and create and edit items. After Power Apps generates an app, you can customize it to make it look and behave exactly the way you want.
+No alt text provided for this image
+Build from a blank canvas
+You can also build an app from the ground up and add all the pieces as you go. You can then branch out and use your imagination.
+Power Apps related technologies
+Let's take a look at the related technology used by Power Apps.
+Data sources, connections, and gateways
+In Power Apps, most canvas apps use external information that is stored in Data Sources. A common example is a table in an Excel file that is stored in OneDrive for Business or SharePoint. Apps access these data sources by using connections. Some connections allow Power Apps to read and write stored data. In Power Apps, you can add many data sources to your apps through built-in or custom connectors. Some of the most popular data sources are shown in the following figure.
+No alt text provided for this image
+Microsoft Dataverse
+An important data source option to explore further is the Dataverse. Dataverse lets you store and manage data that's used by business applications. Data within Dataverse is stored within a set of tables. A table is a set of records that are used to store data, similar to how a table stores data within a database. Dataverse includes a base set of standard tables that cover typical scenarios, but you can also create custom tables that are specific to your organization and then populate them with data by using Power Query. App makers can then use Power Apps to build rich applications by using this data.
+No alt text provided for this image
+For information on purchasing a plan to use Dataverse, refer to the License and Pricing information pages.
+
+Reasons to use Dataverse
+Standard and custom tables within Dataverse provide a cloud-based storage option for your data. Tables let you create a business-focused definition of your organization's data for use within apps. If you're unsure if tables are your best option, consider the following benefits:
+Simple to manage - Both the metadata and data are stored in the cloud. You don't need to worry about the details of how they're stored.
+Helps to secure data - Data is stored so that users can see it only if you grant them access. Role-based security allows you to control access to tables for different users within your organization.
+Access your Dynamics 365 Data - Data from your Dynamics 365 applications is also stored within the Dataverse, which allows you to quickly build apps that use your Dynamics 365 data and extend your apps by using Power Apps.
+Rich metadata - Data types and relationships are used directly within Power Apps.
+Logic and validation - Define calculated columns, business rules, workflows, and business process flows to ensure data quality and drive business processes.
+Productivity tools - Tables are available within the add-ins for Microsoft Excel to increase productivity and ensure data accessibility.
+Additional Power Apps related technologies
+Microsoft Power Apps works with other technologies to help you build powerful apps for your organization, including:
+Power Automate - Allows you to build automated workflows to receive notifications, run processes, collect data, and more.
+Power BI - Allows you to connect data from multiple sources and transform the data into graphical visualizations to gain insights.
+Related Microsoft Power Platform technologies
+As you continue developing your application, you may want to consider implementing other Power Apps related technologies such as Power Automate and or Power BI. For example, you may have a simple Expense Report App that requires an approval before an item can be purchased. With Power Automate, you can create a Flow to make this happen. Or maybe you want to display your data with custom charts and graphs giving your users a more visual look into the data, which can often be useful. In this section, you will learn more about some of the other Microsoft Power Platform technologies and how you could apply them in your own Power Apps solution. Keep in mind, if you decide to implement these Power Apps related technologies you should also review their licensing structure and associated costs.
+No alt text provided for this image
+Power Automate
+Power Automate brings automation to your business. This can be traditional workflows via flow, Robotic Process Automation (RPA) for automating legacy systems via desktop flow, or business process automation via Business Process Flows. Each of these capabilities increases your productivity to connect disjointed systems to build the business solution you need and make your app more powerful.
+You can use Power Automate to create logic that performs one or more tasks when an event occurs in a canvas app. For example, configure a button to execute a flow to do one of the following: create an item in a list in Microsoft Lists, send an email or meeting request, or add a file to OneDrive. The button could be configured to do all of those in a single Power Automate flow. You can configure any control in the app to start the flow, which continues to run even if you close Power Apps. Below is an example using Power Automate to send a flow:
+No alt text provided for this image
+Identify flows in your solution
+Now that you have a general overview of Power Automate, how do you determine if the solution you’re building requires a Flow? There are many simple functions Power Apps can do, like sending an email when a button is pressed in your application. This email generated from Power Apps can also contain dynamic/specific information and be sent to any email address you would like. Often, customers will use Power Automate to create this same functionality even though Power Apps can do this out of the box. Power Automate should be used for more complex solutions, such as the approval workflows. With Power Automate you can run an approval when a button is pressed, on a schedule, when an item is created or modified, and so on.
+For many Power Apps solutions Power Automate is used to handle complex business logic. Do you need a way to make sure someone acted on the incident report that was generated by your app? Or, do you need a process to kick off every time new data is created in another system so Power Apps will have the data it needs? Do you need to check each morning to see if an inspection is due that day and then send an email with a link to your Power Apps inspection form? These are great uses of Power Automate to transform your app from a point solution to a fully featured business solution.
+No alt text provided for this image
+Power BI
+Power BI is an analytics tool within Microsoft Power Platform suite. Power BI connects data from multiple sources and transforms the data into graphical visualizations to gain insights. It allows business users to utilize many different visualizations to build comprehensive reports and dashboards. When creating Power BI reports to view and analyze your app data, you have the ability to customize them for personal use and will only be accessible by you, providing you with a more unique and custom experience. If you need to share the report with others, you and each of the report consumer will need a Power BI Pro license. This license allows you to not only share the content but also control what others are able to do with the shared report or dashboard.
+While Power Apps has capabilities to include simple graphs or tables, many solutions would be better served with a visualization provided by Power BI. Power Apps and Power BI have two options for seamless integration:
+
+Embed a Power BI tile in a Power Apps app
+By embedding a Power BI tile in a Power Apps solution, you are able to bring valuable visualizations into the app to allow the user to consume that data within the context of the app.
+No alt text provided for this image
+Embed a Power Apps app in a Power BI dashboard
+Another integration between these two applications, is to embed a Power Apps app in your Power BI report. This allows the user to act on data while never leaving the dashboard resulting in a better user experience. Consider an inventory management dashboard for a manufacturing facility. Without leaving the dashboard, the user can submit to purchasing an order for other material. While the solution may have been utilizing both the Power Apps and Power BI platforms, the user simply experiences a complete end to end solution in one window on their desktop.
+In the example below, we are analyzing the Sale Price and Profit by Country and Segment. Notice once you have embedded your Power App in a Power BI Dashboard you can navigate between screens.
+No alt text provided for this image
+In this next screenshot, still working with the same data as the previous example, you can utilize the native Power Apps features like Search with Power BI data.
+No alt text provided for this image
+In this last screenshot, for this example, you will see the embedded Power App is filtered by the Power BI selection.
+No alt text provided for this image
+Translating needs to the appropriate technology
+To build the best solution, think through the use cases and determine how you want to collect the data, use the data, and analyze the data. Once you have determined how the solution will be used in each one of those cases, you can begin to select the right technology to execute each function.
+It would be difficult to cover every use case and decision point, but the number of steps in your solution/process will aid you in determining which technology best suits your needs. Power Apps is great for performing simple solutions with minimal steps but as your solutions become more complex and requires multiple steps, Power Automate would be the better solution.
+When deciding whether to use the basic charts, graphs, and visuals that come with Power Apps out of the box or to utilize a more powerful software like Power BI it really depends on your business solution and requirements. For example, if in your solution, you are wanting to add some basic graphs and charts to improve the apps overall look and feel while adding some visual flair for your users, Power Apps has you covered.
+On the other hand, if your solution requires in-depth analysis of your data, and robust visuals, Power BI will be the best product for your solution. Keep in mind, with Power BI, each app user will need another license on top of the Power Apps license. This is a small price to pay though if your solution relies on intuitive dashboards, charts, graphs, and several other features to help you get the most out of your solution.
+By identifying the needs of related Power Apps technologies in your solution and strategically implementing them, you will be able to provide your users with a better overall experience when using the solution.
+Designing a Power Apps app
+As an App Maker, before you begin building your Power Apps solution, it's recommended to go through a design process. When designing your Power Apps solution, there are several different factors to consider, such as:
+Business requirements
+Data Model
+User Experience (UX)
+User Interface (UI)
+Business Logic
+Output
+By going through a simple design process, you can flush out any minor issues before they become a larger problem once the app has been put into production. It is also important to understand that this design process is for Canvas apps.
+So how do you go from a simple blank Canvas app, as seen below:
+No alt text provided for this image
+To a fully customized Canvas app solution?
+No alt text provided for this image
+Understand the needs of the user
+One of the most powerful and, at the same time, challenging parts of building a canvas app is that you start with a blank screen. This gives you the ability to build what you want, but to do that you have to know what you want.
+In many cases, when purchasing software to solve and or streamline business solutions, there are many business processes that don't quite fall within the software's supported guidelines. When you run into this issue, typically, there are several internal discussions and meetings held to determine how those unsupported processes can be updated/altered to meet the software requirements. For most organizations, this isn't ideal because of the cost or time it takes to update those business processes. The great news is, by using Power Apps to build your solution, you won't have to worry about unsupported business solutions. Why? With Power Apps, you can build a custom solution tailored to the exact needs of your business requirements.
+Often when building an app, you are tempted to recreate the piece of paper or legacy software-driven process exactly. This is possible but might not be the ideal solution. By challenging the existing process and asking what it is the business needs to do, not what does the piece of paper or old software allows you to do, it opens the possibility of better, more efficient processes. For example, maybe on the paper process, the user had to type notes about what they see. Would it be better instead to just take a picture? This type of thinking will lead to better apps and better outcomes.
+
+Business Requirements
+Every app you develop will have a different set of business requirements based on the solution. Taking the time to think about all the requirements is key to rolling out a successful production app.
+Depending on the solution or company policies, you may have certain security, privacy, or compliance requirements you must follow. For example, let's say you are collecting secure personal information in the app. You will want to ensure this information is securely stored and not visible to everyone.
+During this process, you will also want to identify any government regulations or authentication/authorization requirements (if applicable). You don't necessarily have to have all the answers to your questions here; you just want to know all the requirements.
+
+Data Model
+In the "Power Apps related technologies" module, you learned about some of the common data sources for building apps, but with all these choices how do you actually decide which data source to use for your solution? Maybe you already have a data source implemented that users work with on a day to day basis, like SharePoint. Could you just use this as your data source to build your app? Do I need to connect to multiple data sources? These are all common questions you should ask yourself and there are number of other factors to consider, such as:
+Business Requirements – Every data source and it's supported functionality is slightly different. So, depending on your app requirements you need to select the data source that supports your needs or modify your business requirements to comply with the supported functionality for the selected data source.
+Licensing/Cost – Certain data sources like the Microsoft Dataverse or SQL are considered a "premium data source". A premium data source will require each user who uses the app to have a Power Apps Per App Plan or a Power Apps Per User Plan. For more information about licensing, see Power Apps pricing
+User Experience (UX)
+By designing your Power Apps solution in a Canvas app, you have complete control of the end-user experience. This allows you to fully customize nearly every aspect of your app. However, just because you can doesn't necessarily mean you should. When designing your Power Apps solution your goal should be to keep it simple. When your end users open the application and begin using it, they should have no confusion about what to click on or where to go. If your app requires an extensive training program for users to understand how to use it, you may want to rethink your app.
+Some of the basic designs elements you will want to consider are things like:
+Custom Branding (your logo and colors)
+Pop-ups
+Hide/show buttons based on users' access/permissions
+No alt text provided for this image
+One of the most common User Experience enhancements you can implement in your applications are Pop-ups. By implementing pop-ups, you can provide the users with a simple, but useful visual to confirm what the user clicked on went through or maybe your pop-up acts as a loading screen as the logic on the backend is processed. For example, in the screenshot below when a user clicks on "Submit", we might have a simple pop-up display to let them know their submission was successful.
+In this example app, the user completes a Survey for the training class they just attended.Without confirmation, a user may not be sure if their submission was accepted. They may try to click the button again, causing incorrect or inconsistent data being written to the data source.
+Remember, these are not the only customizations you can make to the app, these are just some of the common ones. Another thing to keep in mind as you add different design features is the more logic you add for the customization of the app the more code your application will need to process. So, for example, if you add several different functions for hiding buttons, or showing popups on a given screen, this could cause your application performance to slow as each piece of code runs.
+Finally, challenge yourself to do better with your user experience. Maybe today, the user records room temperatures by clicking in a box, changing the device keyboard from letters to numbers, and then typing in “70”. A better option may be to replace with a slider control that defaults to 70 and ranges from 65 to 75. Then, with a swipe of their finger, they can record the temperature. Small changes like this make for happier, more productive app users.
+
+User Interface (UI)
+To fully visualize the User Interface or UI, you may want to consider creating a mockup of your application. Two common ways to create a mockup of your application are below:
+Use Visio to create a wireframe diagram. A wireframe is a visual representation of an application's user interface. To begin, there are various website and mobile wireframe templates available, or you could start from blank template. The diagrams are a quick way to show app functionality and gain team consensus on the design.
+The example below shows a simple Visio wireframe of a Purchase Items screen in an inventory app.
+No alt text provided for this image
+Use Power Apps to create a mockup of your application. You can add most of the controls, graphics, forms, and other items to your app screens and play with the layout and size for each element as if you were building the app for real. When designing the UI you don't need to add the logic behind the various elements you placed on the screen. The goal here is to focus on what the app could look like and how it could function. This is similar to what you can do with a Visio wireframe but one of the biggest pros of going this route is that you will gain more experience working with Power Apps and also learn more about the various UI elements available in the process. All of the experience and knowledge you will gain by creating your app mockup in Power Apps will only payoff later when it's time to start on the production app. Another significant upside to using Power Apps for your mockup is that if you show this to your team and they like what you did, you can continue building off this app or create a new app and copy the elements you would like to keep to your other application. By not having to redo the UI or only having to redo parts of it, you could potentially save yourself hours of work.
+The example below shows a simple mockup of a New Purchase Order Screen.
+No alt text provided for this image
+It really comes down to your preference and comfort with the software you are using to create the mockup. You should also consider licensing and costs when making this decision. Visio requires other licensing to get the full functionality required for creating a wireframe diagram. Whereas with Power Apps, it doesn't matter which license you have. As long as you have Power Apps (and sufficient permissions in your environment), you can create apps and mockup apps.
+As you design the User Interface, a few other things to think about are Accessibility and Localization. It's important to ensure the app interface follows accessibility guidelines so all your users can interact with your application without any issues. To review these guidelines and other accessibility properties, see Create accessible canvas apps in Power Apps.
+Localization can be something you must consider when developing your application as well. Depending on where your app will be used, you may need to use different punctuation. For example, some regions of the world use a . (dot or period) as the decimal separator while others use a , (comma). For more information on building a globally supported application, see Build global support into canvas apps.
+Published by
+Abhishek ShrivastavaStatus is online
+Abhishek Shrivastava
+Atos Expert Modern Application , Certified AWS , GCP & Microsoft Azure Cloud Associate Architecture , Microsoft Certified Trainer MCT , AWS Community Builders , Cisco Advocate star , Microsoft Innovative Educator Expert
+Published • 7m
+12 articles
+Article released in hashtag#MyCloudDiary :: https://lnkd.in/dHAMiTcH ..
+
+This article provides an overview of Introduction to Power Apps.
+
+Please like ,share and subscribe below hashtag#channelpartners on 
+YouTube  :: https://lnkd.in/d2zATThK
+GitHub  :: https://lnkd.in/dHAMiTcH
+Hashnode  :: https://lnkd.in/d_gtGxuS
+Twitter  :: https://lnkd.in/e5ZY5j-x
+Dev Community TLV  :: https://lnkd.in/duMEcSnc
+Tealfeed  :: https://lnkd.in/eTyp-Xe4
+Medium :: https://lnkd.in/dpEzM8GU
+
+Education for Microsoft Cloud Azure Leaders :: Dan Rey, Denise Reed Lamoreaux Sjoukje Zaal Deepak Rajendran
+
+hashtag#mvpbuzz  hashtag#mct  hashtag#devops hashtag#cloud hashtag#software hashtag#community Microsoft Microsoft Leap Microsoft Learn Student Ambassadors Microsoft Learn  hashtag#awscommunitybuilders  hashtag#dataanalytics hashtag#share hashtag#microsoft hashtag#like hashtag#github hashtag#dataanalysis hashtag#kubernetes hashtag#kubernetesservices hashtag#kubernetescluster hashtag#azure hashtag#aws hashtag#complexity hashtag#amazon hashtag#google hashtag#leadershipbyexample  hashtag#architecturelovers hashtag#architect hashtag#education hashtag#k8s Evidian - Atos Cyber Security Atos Atos Digital Security NL (voorheen Motiv) hashtag#cybersec  Security hashtag#security hashtag#atossc hashtag#atosexpert hashtag#cybersecurity hashtag#mvpbuzz hashtag#mvp hashtag#mvps hashtag#mct hashtag#powerbiexperience
